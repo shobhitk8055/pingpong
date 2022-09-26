@@ -1,9 +1,25 @@
+.gameContainer{
+    background: linear-gradient(to right, #141e30, #243b55);
+}
+
 .bar {
     display: inline-block;
     position: relative;
     width: 19vw;
     height: 25px;
     border-radius: 4px;
+}
+
+.computerArea{
+    height: 10%;
+}
+
+.playerBar{
+    height: 10%;
+}
+
+.ballArea{
+    height: 90%;
 }
 #computerBar {
     background-color: red;
@@ -13,4 +29,14 @@
 #playerBar {
     background-color: blue;
     left: 0vw;
+}
+#ball{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-color: beige;
+    border-radius: 100%;
+    position: relative;
+    top:10vh;
+    left: 10vh;
 }
