@@ -1,0 +1,16 @@
+.bar {
+    display: inline-block;
+    position: relative;
+    width: 19vw;
+    height: 25px;
+    border-radius: 4px;
+}
+#computerBar {
+    background-color: red;
+    left: 0vw;
+}
+
+#playerBar {
+    background-color: blue;
+    left: 0vw;
+}
