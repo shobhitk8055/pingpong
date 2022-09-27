@@ -6,30 +6,32 @@
     display: inline-block;
     position: relative;
     width: 19vw;
-    height: 25px;
+    height: 5vh;
     border-radius: 4px;
 }
 
 .computerArea{
-    height: 10%;
+    height: fit-content;
 }
 
 .playerBar{
-    height: 10%;
+    height: fit-content;
 }
 
-.ballArea{
+#ballArea{
     height: 90%;
 }
+
 #computerBar {
     background-color: red;
     left: 0vw;
 }
 
 #playerBar {
-    background-color: blue;
+    background-color: #e2e2e6;
     left: 0vw;
 }
+
 #ball{
     display: inline-block;
     width: 32px;
@@ -37,6 +39,6 @@
     background-color: beige;
     border-radius: 100%;
     position: relative;
-    top:10vh;
-    left: 10vh;
+    top: 1px;
+    left: 1vw;
 }
