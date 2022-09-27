@@ -28,8 +28,8 @@ const getBarPositionY = (bar) => {
 
 (function () {
   var goToRight = false;
+  const bar = $("#computerBar");
   setInterval(() => {
-    const bar = $("#computerBar");
     let barPosition = getBarPositionX(bar);
     if (barPosition == 0) goToRight = true;
     if (barPosition == 80) goToRight = false;
@@ -43,13 +43,12 @@ const getBarPositionY = (bar) => {
 
 (function () {
   var goToDirection = direction.BOTTOM_RIGHT;
+  const ballAreaHeight = parseInt($("#ballArea").height());
+  const ballAreaWidth = parseInt($("#ballArea").width())-30;
+  const ball = $("#ball");
   setInterval(() => {
-    const ball = $("#ball");
-    const ballAreaHeight = parseInt($("#ballArea").height());
-    const ballAreaWidth = parseInt($("#ballArea").width())-30;
     let left = parseInt(Number(ball.css("left").replace("px", "")));
     let top =  parseInt(Number(ball.css("top").replace("px", "")));
-
     if(top === ballAreaHeight){
       if(goToDirection === direction.BOTTOM_RIGHT){
         goToDirection = direction.TOP_RIGHT;
@@ -113,16 +112,15 @@ const getBarPositionY = (bar) => {
 })();
 
 $("body").on("keydown", (event) => {
-  // if
   const key = event.originalEvent.key;
   if (key === keys.LEFT || key === keys.RIGHT) {
     const bar = $("#playerBar");
     let barPosition = getBarPositionX(bar);
     if (key === keys.LEFT && barPosition >= 4) {
-      barPosition = barPosition - 4;
+      barPosition = barPosition - 1;
     }
     if (key === keys.RIGHT && barPosition <= 77) {
-      barPosition = barPosition + 4;
+      barPosition = barPosition + 1;
     }
     barPosition = barPosition + "vw";
     bar.css("left", barPosition);
