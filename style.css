@@ -1,5 +1,19 @@
+body{
+    font-family: 'Play', sans-serif;
+}
 .gameContainer{
+    height: 86vh;
     background: linear-gradient(to right, #141e30, #243b55);
+}
+
+.modal-header {
+    padding: 20px 40px;
+    background: #546E7A;
+    color: #ffffff;
+}
+
+.modal-content {
+    border: none;
 }
 
 .bar {
@@ -24,6 +38,7 @@
 
 #computerBar {
     background-color: red;
+    width: 30vw;
     left: 0vw;
 }
 
@@ -41,4 +56,39 @@
     position: relative;
     top: 1px;
     left: 1vw;
+}
+.player_name{
+    font-size: 40px;
+    margin: 12px 60px;
+    text-transform: uppercase;
+}
+span.text {
+    font-size: 30px;
+    padding: 0px 30px;
+}
+
+.computer{
+    color: red;
+}
+
+.player{
+    color: #6bdd6b;
+}
+
+.nameInput{
+    width: 100%;
+    border: 1px solid #333333;
+    outline: none;
+    color: #212529;
+    padding: 10px;
+}
+
+.btn-submit{
+    color: white;
+    background-color: #546E7A;
+    border-color: #546E7A;
+}
+
+img.gif {
+    width: 50%;
 }
