@@ -61,7 +61,7 @@ document.getElementById("nameForm").addEventListener("submit", (e)=>{
         return;
     }
     $("#error_message").text("");
-    location.href = location.origin+"?pname="+val;
+    location.href = location.origin+location.pathname+"?pname="+val;
 })
 
 
@@ -84,7 +84,7 @@ function playerWon(player){
 }
 
 function retryGame(){
-  location.href = location.origin+"?pname="+pName;
+  location.href = location.origin+location.pathname+"?pname="+pName;
 }
 
 //Returns bar position in percentage
