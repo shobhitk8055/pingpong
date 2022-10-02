@@ -32,8 +32,8 @@ var looseModal = new bootstrap.Modal(document.getElementById('looseModal'))
 if(!pName){
   nameModal.show()
 }else{
-    $("#player_name_heading").text(pName);
-    startGame();
+  document.getElementById("player_name_heading").innerText = pName;
+  startGame();
 }
 
 $('#playerNameModal').on('shown.bs.modal', function () {
